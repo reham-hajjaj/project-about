@@ -15,6 +15,8 @@
     --spacing: 0.25rem;
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
     --text-3xl: 1.875rem;
@@ -860,11 +862,17 @@
   .relative {
     position: relative;
   }
+  .inset-0 {
+    inset: calc(var(--spacing) * 0);
+  }
   .top-1 {
     top: calc(var(--spacing) * 1);
   }
   .top-1\/2 {
     top: calc(1 / 2 * 100%);
+  }
+  .top-2 {
+    top: calc(var(--spacing) * 2);
   }
   .left-1 {
     left: calc(var(--spacing) * 1);
@@ -1102,6 +1110,9 @@
     width: calc(var(--spacing) * 7);
     height: calc(var(--spacing) * 7);
   }
+  .h-1 {
+    height: calc(var(--spacing) * 1);
+  }
   .h-5 {
     height: calc(var(--spacing) * 5);
   }
@@ -1119,6 +1130,9 @@
   }
   .h-150 {
     height: calc(var(--spacing) * 150);
+  }
+  .h-200 {
+    height: calc(var(--spacing) * 200);
   }
   .h-1050 {
     height: calc(var(--spacing) * 1050);
@@ -1192,6 +1206,9 @@
   }
   .items-end {
     align-items: flex-end;
+  }
+  .justify-between {
+    justify-content: space-between;
   }
   .justify-center {
     justify-content: center;
@@ -1319,14 +1336,44 @@
   .py-90 {
     padding-block: calc(var(--spacing) * 90);
   }
+  .py-150 {
+    padding-block: calc(var(--spacing) * 150);
+  }
+  .py-200 {
+    padding-block: calc(var(--spacing) * 200);
+  }
   .py-205 {
     padding-block: calc(var(--spacing) * 205);
+  }
+  .py-220 {
+    padding-block: calc(var(--spacing) * 220);
+  }
+  .py-240 {
+    padding-block: calc(var(--spacing) * 240);
+  }
+  .py-250 {
+    padding-block: calc(var(--spacing) * 250);
+  }
+  .py-252 {
+    padding-block: calc(var(--spacing) * 252);
   }
   .pb-5 {
     padding-bottom: calc(var(--spacing) * 5);
   }
   .text-center {
     text-align: center;
+  }
+  .font-\[ope\] {
+    font-family: ope;
+  }
+  .font-\[open-sa\] {
+    font-family: open-sa;
+  }
+  .font-\[open-san\] {
+    font-family: open-san;
+  }
+  .font-\[open\] {
+    font-family: open;
   }
   .font-sans {
     font-family: var(--font-sans);
@@ -1346,6 +1393,10 @@
   .text-sm {
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
   }
   .text-wrap {
     text-wrap: wrap;
